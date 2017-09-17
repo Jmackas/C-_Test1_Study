@@ -28,83 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.WeightInputText = new System.Windows.Forms.TextBox();
-            this.ClearInputLabelButton = new System.Windows.Forms.Button();
-            this.BRadio = new System.Windows.Forms.RadioButton();
-            this.CRadio = new System.Windows.Forms.RadioButton();
-            this.Aradio = new System.Windows.Forms.RadioButton();
+            this.weightInputText = new System.Windows.Forms.TextBox();
+            this.clearInputLabelButton = new System.Windows.Forms.Button();
+            this.bRadio = new System.Windows.Forms.RadioButton();
+            this.cRadio = new System.Windows.Forms.RadioButton();
+            this.aRadio = new System.Windows.Forms.RadioButton();
             this.AppleGradesText = new System.Windows.Forms.Label();
+            this.calculateButton = new System.Windows.Forms.Button();
+            this.exitFormButton = new System.Windows.Forms.Button();
+            this.finalOutputPrice = new System.Windows.Forms.Label();
+            this.instructionEnterAppleWeight = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // WeightInputText
+            // weightInputText
             // 
-            this.WeightInputText.Location = new System.Drawing.Point(12, 12);
-            this.WeightInputText.Name = "WeightInputText";
-            this.WeightInputText.Size = new System.Drawing.Size(208, 20);
-            this.WeightInputText.TabIndex = 0;
+            this.weightInputText.Location = new System.Drawing.Point(6, 28);
+            this.weightInputText.Name = "weightInputText";
+            this.weightInputText.Size = new System.Drawing.Size(93, 20);
+            this.weightInputText.TabIndex = 0;
             // 
-            // ClearInputLabelButton
+            // clearInputLabelButton
             // 
-            this.ClearInputLabelButton.Location = new System.Drawing.Point(226, 9);
-            this.ClearInputLabelButton.Name = "ClearInputLabelButton";
-            this.ClearInputLabelButton.Size = new System.Drawing.Size(75, 23);
-            this.ClearInputLabelButton.TabIndex = 1;
-            this.ClearInputLabelButton.Text = "Clear";
-            this.ClearInputLabelButton.UseVisualStyleBackColor = true;
+            this.clearInputLabelButton.Location = new System.Drawing.Point(105, 25);
+            this.clearInputLabelButton.Name = "clearInputLabelButton";
+            this.clearInputLabelButton.Size = new System.Drawing.Size(75, 23);
+            this.clearInputLabelButton.TabIndex = 1;
+            this.clearInputLabelButton.Text = "Clear";
+            this.clearInputLabelButton.UseVisualStyleBackColor = true;
             // 
-            // BRadio
+            // bRadio
             // 
-            this.BRadio.AutoSize = true;
-            this.BRadio.Location = new System.Drawing.Point(12, 110);
-            this.BRadio.Name = "BRadio";
-            this.BRadio.Size = new System.Drawing.Size(32, 17);
-            this.BRadio.TabIndex = 2;
-            this.BRadio.TabStop = true;
-            this.BRadio.Text = "B";
-            this.BRadio.UseVisualStyleBackColor = true;
+            this.bRadio.AutoSize = true;
+            this.bRadio.Location = new System.Drawing.Point(15, 104);
+            this.bRadio.Name = "bRadio";
+            this.bRadio.Size = new System.Drawing.Size(32, 17);
+            this.bRadio.TabIndex = 2;
+            this.bRadio.TabStop = true;
+            this.bRadio.Text = "B";
+            this.bRadio.UseVisualStyleBackColor = true;
             // 
-            // CRadio
+            // cRadio
             // 
-            this.CRadio.AutoSize = true;
-            this.CRadio.Location = new System.Drawing.Point(12, 133);
-            this.CRadio.Name = "CRadio";
-            this.CRadio.Size = new System.Drawing.Size(32, 17);
-            this.CRadio.TabIndex = 3;
-            this.CRadio.TabStop = true;
-            this.CRadio.Text = "C";
-            this.CRadio.UseVisualStyleBackColor = true;
+            this.cRadio.AutoSize = true;
+            this.cRadio.Location = new System.Drawing.Point(15, 127);
+            this.cRadio.Name = "cRadio";
+            this.cRadio.Size = new System.Drawing.Size(32, 17);
+            this.cRadio.TabIndex = 3;
+            this.cRadio.TabStop = true;
+            this.cRadio.Text = "C";
+            this.cRadio.UseVisualStyleBackColor = true;
             // 
-            // Aradio
+            // aRadio
             // 
-            this.Aradio.AutoSize = true;
-            this.Aradio.Location = new System.Drawing.Point(12, 87);
-            this.Aradio.Name = "Aradio";
-            this.Aradio.Size = new System.Drawing.Size(32, 17);
-            this.Aradio.TabIndex = 4;
-            this.Aradio.TabStop = true;
-            this.Aradio.Text = "A";
-            this.Aradio.UseVisualStyleBackColor = true;
+            this.aRadio.AutoSize = true;
+            this.aRadio.Location = new System.Drawing.Point(15, 81);
+            this.aRadio.Name = "aRadio";
+            this.aRadio.Size = new System.Drawing.Size(32, 17);
+            this.aRadio.TabIndex = 4;
+            this.aRadio.TabStop = true;
+            this.aRadio.Text = "A";
+            this.aRadio.UseVisualStyleBackColor = true;
             // 
             // AppleGradesText
             // 
             this.AppleGradesText.AutoSize = true;
-            this.AppleGradesText.Location = new System.Drawing.Point(9, 62);
+            this.AppleGradesText.Location = new System.Drawing.Point(12, 65);
             this.AppleGradesText.Name = "AppleGradesText";
             this.AppleGradesText.Size = new System.Drawing.Size(71, 13);
             this.AppleGradesText.TabIndex = 5;
             this.AppleGradesText.Text = "Apple Grades";
+            // 
+            // calculateButton
+            // 
+            this.calculateButton.Location = new System.Drawing.Point(6, 253);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(75, 23);
+            this.calculateButton.TabIndex = 6;
+            this.calculateButton.Text = "Calculate";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            // 
+            // exitFormButton
+            // 
+            this.exitFormButton.Location = new System.Drawing.Point(226, 270);
+            this.exitFormButton.Name = "exitFormButton";
+            this.exitFormButton.Size = new System.Drawing.Size(75, 23);
+            this.exitFormButton.TabIndex = 7;
+            this.exitFormButton.Text = "Calculate";
+            this.exitFormButton.UseVisualStyleBackColor = true;
+            // 
+            // finalOutputPrice
+            // 
+            this.finalOutputPrice.AutoSize = true;
+            this.finalOutputPrice.Location = new System.Drawing.Point(3, 162);
+            this.finalOutputPrice.Name = "finalOutputPrice";
+            this.finalOutputPrice.Size = new System.Drawing.Size(56, 13);
+            this.finalOutputPrice.TabIndex = 8;
+            this.finalOutputPrice.Text = "Final Price";
+            // 
+            // instructionEnterAppleWeight
+            // 
+            this.instructionEnterAppleWeight.AutoSize = true;
+            this.instructionEnterAppleWeight.Location = new System.Drawing.Point(3, 9);
+            this.instructionEnterAppleWeight.Name = "instructionEnterAppleWeight";
+            this.instructionEnterAppleWeight.Size = new System.Drawing.Size(163, 13);
+            this.instructionEnterAppleWeight.TabIndex = 9;
+            this.instructionEnterAppleWeight.Text = "Enter Apple/s Weight (Kilograms)";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 178);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 10;
             // 
             // AppleQualityDeterminer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(313, 305);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.instructionEnterAppleWeight);
+            this.Controls.Add(this.finalOutputPrice);
+            this.Controls.Add(this.exitFormButton);
+            this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.AppleGradesText);
-            this.Controls.Add(this.Aradio);
-            this.Controls.Add(this.CRadio);
-            this.Controls.Add(this.BRadio);
-            this.Controls.Add(this.ClearInputLabelButton);
-            this.Controls.Add(this.WeightInputText);
+            this.Controls.Add(this.aRadio);
+            this.Controls.Add(this.cRadio);
+            this.Controls.Add(this.bRadio);
+            this.Controls.Add(this.clearInputLabelButton);
+            this.Controls.Add(this.weightInputText);
             this.Name = "AppleQualityDeterminer";
             this.Text = "Apple Quality Determiner";
             this.ResumeLayout(false);
@@ -114,12 +167,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox WeightInputText;
-        private System.Windows.Forms.Button ClearInputLabelButton;
-        private System.Windows.Forms.RadioButton BRadio;
-        private System.Windows.Forms.RadioButton CRadio;
-        private System.Windows.Forms.RadioButton Aradio;
+        private System.Windows.Forms.TextBox weightInputText;
+        private System.Windows.Forms.Button clearInputLabelButton;
+        private System.Windows.Forms.RadioButton bRadio;
+        private System.Windows.Forms.RadioButton cRadio;
+        private System.Windows.Forms.RadioButton aRadio;
         private System.Windows.Forms.Label AppleGradesText;
+        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Button exitFormButton;
+        private System.Windows.Forms.Label finalOutputPrice;
+        private System.Windows.Forms.Label instructionEnterAppleWeight;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
