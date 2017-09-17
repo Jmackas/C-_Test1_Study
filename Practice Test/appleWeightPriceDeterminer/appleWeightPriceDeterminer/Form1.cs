@@ -19,12 +19,49 @@ namespace appleWeightPriceDeterminer
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
+            // try catch block to ensure the program 'catches' errors.
             try
             {
-               
+                // Declaration of variables
+                    // input weight of apples
+                    decimal applesWeight;
 
+                    // static price of apples
+                    decimal staticApplePrice = 2.50m;
 
+                    // Radio button 'A' bonus
+                    decimal aBonus = 1.15m;
 
+                    // Radio button 'B' bonus
+                    decimal bBonus = 1.05m;
+
+                    // Radio button 'B' bonus
+                    decimal cBonus = 1.00m;
+
+                    // output price 
+                    decimal finalPrice;
+
+                // String to integer for user input
+                applesWeight = decimal.Parse(weightInputLabel.Text);
+
+                // If else to determine the price for each radio box selection                
+                if (aRadio.Checked)
+                {
+                    finalPrice = (applesWeight * staticApplePrice) * aBonus;
+                    finalPriceOutput.Text = finalPrice.ToString("c");
+                }
+
+                if (bRadio.Checked)
+                { 
+                    finalPrice = (applesWeight * staticApplePrice) * bBonus;
+                    finalPriceOutput.Text = finalPrice.ToString("c");
+                }
+
+                if (cRadio.Checked)
+               {
+                    finalPrice = (applesWeight * staticApplePrice) * cBonus;
+                    finalPriceOutput.Text = finalPrice.ToString("c");
+                }
 
 
             }

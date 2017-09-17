@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.weightInputText = new System.Windows.Forms.TextBox();
+            this.weightInputLabel = new System.Windows.Forms.TextBox();
             this.clearInputLabelButton = new System.Windows.Forms.Button();
             this.bRadio = new System.Windows.Forms.RadioButton();
             this.cRadio = new System.Windows.Forms.RadioButton();
@@ -38,15 +38,15 @@
             this.exitFormButton = new System.Windows.Forms.Button();
             this.finalOutputPrice = new System.Windows.Forms.Label();
             this.instructionEnterAppleWeight = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.finalPriceOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // weightInputText
+            // weightInputLabel
             // 
-            this.weightInputText.Location = new System.Drawing.Point(6, 28);
-            this.weightInputText.Name = "weightInputText";
-            this.weightInputText.Size = new System.Drawing.Size(93, 20);
-            this.weightInputText.TabIndex = 0;
+            this.weightInputLabel.Location = new System.Drawing.Point(6, 28);
+            this.weightInputLabel.Name = "weightInputLabel";
+            this.weightInputLabel.Size = new System.Drawing.Size(93, 20);
+            this.weightInputLabel.TabIndex = 0;
             // 
             // clearInputLabelButton
             // 
@@ -136,19 +136,20 @@
             this.instructionEnterAppleWeight.TabIndex = 9;
             this.instructionEnterAppleWeight.Text = "Enter Apple/s Weight (Kilograms)";
             // 
-            // textBox1
+            // finalPriceOutput
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 194);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 10;
+            this.finalPriceOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.finalPriceOutput.Location = new System.Drawing.Point(127, 193);
+            this.finalPriceOutput.Name = "finalPriceOutput";
+            this.finalPriceOutput.Size = new System.Drawing.Size(50, 15);
+            this.finalPriceOutput.TabIndex = 10;
             // 
             // AppleQualityDeterminer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(313, 305);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.finalPriceOutput);
             this.Controls.Add(this.instructionEnterAppleWeight);
             this.Controls.Add(this.finalOutputPrice);
             this.Controls.Add(this.exitFormButton);
@@ -158,7 +159,7 @@
             this.Controls.Add(this.cRadio);
             this.Controls.Add(this.bRadio);
             this.Controls.Add(this.clearInputLabelButton);
-            this.Controls.Add(this.weightInputText);
+            this.Controls.Add(this.weightInputLabel);
             this.Name = "AppleQualityDeterminer";
             this.Text = "Apple Quality Determiner";
             this.ResumeLayout(false);
@@ -168,7 +169,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox weightInputText;
+        private System.Windows.Forms.TextBox weightInputLabel;
         private System.Windows.Forms.Button clearInputLabelButton;
         private System.Windows.Forms.RadioButton bRadio;
         private System.Windows.Forms.RadioButton cRadio;
@@ -178,7 +179,7 @@
         private System.Windows.Forms.Button exitFormButton;
         private System.Windows.Forms.Label finalOutputPrice;
         private System.Windows.Forms.Label instructionEnterAppleWeight;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label finalPriceOutput;
     }
 }
 
