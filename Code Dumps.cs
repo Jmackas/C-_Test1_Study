@@ -2,42 +2,75 @@
 /****************************************
 Try catch block 
 ****************************************/
-// Syntax
+// syntax
 	try {
-	 // All code between here
+	 // all code between here
 	} catch {
 	 MessageBox.Show("Code Dump");
 	}
 	
-// Example
+// example
 	try {
 		decimal paintArea, paintPrice;
 	} catch {
-	 MessageBox.Show(/* Code */);
+	 MessageBox.Show(/* code */);
 	}
 	
 	
 	
 /****************************************
+If statement
+****************************************/
+// syntax
+	if (/* condition */) {
+		// display code
+	}
+
+// example
+	if (x = 1) {
+	 MessageBox.Show("Please enter a realistic speed.");
+	}
+					
+/****************************************
 If-else statement
 ****************************************/
-// Syntax
-if (/* Statement */) {
-	// display code
-}
+// syntax
+	if (/* condition */)
+		{
+		   // statement is true
+		}
+		else
+		{
+			// statement is false
+		}
+	
+// example
+	if (x = 1)
+		{
+		   // statement is true
+		}
+		else
+		{
+			// statement is false
+		}
 
 
-// Example
-if ( x = 1 ) {
- MessageBox.Show("Please enter a realistic speed.");
-}
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
