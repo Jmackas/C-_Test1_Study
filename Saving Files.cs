@@ -1,3 +1,7 @@
+/*******************************
+Remember, requires 'using System.IO;' at the top!
+********************************/  
+  
   StreamWriter outputFile;
 
   // Output file creation 
