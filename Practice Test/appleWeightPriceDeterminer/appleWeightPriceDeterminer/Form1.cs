@@ -87,6 +87,14 @@ namespace appleWeightPriceDeterminer
         {
             weightInputLabel.Text = "";
             finalPriceOutput.Text = "";
+
+            if (aRadio.Checked || bRadio.Checked || cRadio.Checked )
+            {
+                aRadio.Checked = false;
+                bRadio.Checked = false;
+                cRadio.Checked = false;
+            }
+
         }
     }
     
