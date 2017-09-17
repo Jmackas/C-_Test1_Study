@@ -56,16 +56,17 @@ If-else statement
 /****************************************
 While loop 
 ****************************************/
+// syntax
+	while (/* condition */)
+	{
+		// statement
+	}
 
 // example
 	while (n > 6)
 	{
 		Console.WriteLine("current value is" + n);
 	}
-
-
-
-
 
 
 
