@@ -56,6 +56,7 @@
             this.clearInputLabelButton.TabIndex = 1;
             this.clearInputLabelButton.Text = "Clear";
             this.clearInputLabelButton.UseVisualStyleBackColor = true;
+            this.clearInputLabelButton.Click += new System.EventHandler(this.clearInputLabelButton_Click);
             // 
             // bRadio
             // 
@@ -117,6 +118,7 @@
             this.exitFormButton.TabIndex = 7;
             this.exitFormButton.Text = "Exit";
             this.exitFormButton.UseVisualStyleBackColor = true;
+            this.exitFormButton.Click += new System.EventHandler(this.exitFormButton_Click);
             // 
             // finalOutputPrice
             // 

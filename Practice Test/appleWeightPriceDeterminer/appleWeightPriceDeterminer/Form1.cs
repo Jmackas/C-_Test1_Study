@@ -23,26 +23,33 @@ namespace appleWeightPriceDeterminer
             try
             {
                 // Declaration of variables
-                    // input weight of apples
-                    decimal applesWeight;
+                // input weight of apples
+                decimal applesWeight;
 
-                    // static price of apples
-                    decimal staticApplePrice = 2.50m;
+                // static price of apples
+                decimal staticApplePrice = 2.50m;
 
-                    // Radio button 'A' bonus
-                    decimal aBonus = 1.15m;
+                // Radio button 'A' bonus
+                decimal aBonus = 1.15m;
 
-                    // Radio button 'B' bonus
-                    decimal bBonus = 1.05m;
+                // Radio button 'B' bonus
+                decimal bBonus = 1.05m;
 
-                    // Radio button 'B' bonus
-                    decimal cBonus = 1.00m;
+                // Radio button 'B' bonus
+                decimal cBonus = 1.00m;
 
-                    // output price 
-                    decimal finalPrice;
+                // output price 
+                decimal finalPrice;
 
                 // String to integer for user input
                 applesWeight = decimal.Parse(weightInputLabel.Text);
+
+                // Checks to determine adequate data input
+                if (!(aRadio.Checked) && !(bRadio.Checked) && !(cRadio.Checked))
+                {
+                    MessageBox.Show("Please select a bonus.");
+                }
+
 
                 // If else to determine the price for each radio box selection                
                 if (aRadio.Checked)
@@ -63,12 +70,22 @@ namespace appleWeightPriceDeterminer
                     finalPriceOutput.Text = finalPrice.ToString("c");
                 }
 
-
+            
             }
             catch
             {
                 MessageBox.Show("Please enter a valid number");
             }
+        }
+
+        private void exitFormButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void clearInputLabelButton_Click(object sender, EventArgs e)
+        {
+            weightInputLabel.Text = "";
         }
     }
     
