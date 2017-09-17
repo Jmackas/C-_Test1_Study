@@ -17,6 +17,22 @@ namespace appleWeightPriceDeterminer
             InitializeComponent();
         }
 
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+               
+
+
+
+
+
+            }
+            catch
+            {
+                MessageBox.Show("Please enter a valid number");
+            }
+        }
     }
     
 }

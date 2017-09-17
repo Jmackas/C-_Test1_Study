@@ -101,26 +101,27 @@
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(6, 253);
+            this.calculateButton.Location = new System.Drawing.Point(6, 248);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(75, 23);
+            this.calculateButton.Size = new System.Drawing.Size(127, 45);
             this.calculateButton.TabIndex = 6;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // exitFormButton
             // 
-            this.exitFormButton.Location = new System.Drawing.Point(226, 270);
+            this.exitFormButton.Location = new System.Drawing.Point(174, 248);
             this.exitFormButton.Name = "exitFormButton";
-            this.exitFormButton.Size = new System.Drawing.Size(75, 23);
+            this.exitFormButton.Size = new System.Drawing.Size(127, 45);
             this.exitFormButton.TabIndex = 7;
-            this.exitFormButton.Text = "Calculate";
+            this.exitFormButton.Text = "Exit";
             this.exitFormButton.UseVisualStyleBackColor = true;
             // 
             // finalOutputPrice
             // 
             this.finalOutputPrice.AutoSize = true;
-            this.finalOutputPrice.Location = new System.Drawing.Point(3, 162);
+            this.finalOutputPrice.Location = new System.Drawing.Point(124, 178);
             this.finalOutputPrice.Name = "finalOutputPrice";
             this.finalOutputPrice.Size = new System.Drawing.Size(56, 13);
             this.finalOutputPrice.TabIndex = 8;
@@ -137,7 +138,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 178);
+            this.textBox1.Location = new System.Drawing.Point(105, 194);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 10;
