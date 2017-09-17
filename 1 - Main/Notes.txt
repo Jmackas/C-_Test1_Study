@@ -1,0 +1,4 @@
+/**********************
+To disable form autosizing
+**********************/
+'Form Border Style: FixedSingle'
