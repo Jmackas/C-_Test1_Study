@@ -86,6 +86,7 @@ namespace appleWeightPriceDeterminer
         private void clearInputLabelButton_Click(object sender, EventArgs e)
         {
             weightInputLabel.Text = "";
+            finalPriceOutput.Text = "";
         }
     }
     
