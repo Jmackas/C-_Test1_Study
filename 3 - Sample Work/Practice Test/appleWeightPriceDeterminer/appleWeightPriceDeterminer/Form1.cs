@@ -58,13 +58,13 @@ namespace appleWeightPriceDeterminer
                     finalPriceOutput.Text = finalPrice.ToString("c");
                 }
 
-                if (bRadio.Checked)
+                else if (bRadio.Checked)
                 { 
                     finalPrice = (applesWeight * staticApplePrice) * bBonus;
                     finalPriceOutput.Text = finalPrice.ToString("c");
                 }
 
-                if (cRadio.Checked)
+                else if (cRadio.Checked)
                {
                     finalPrice = (applesWeight * staticApplePrice) * cBonus;
                     finalPriceOutput.Text = finalPrice.ToString("c");

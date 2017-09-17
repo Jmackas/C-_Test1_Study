@@ -141,10 +141,11 @@
             // finalPriceOutput
             // 
             this.finalPriceOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.finalPriceOutput.Location = new System.Drawing.Point(127, 193);
+            this.finalPriceOutput.Location = new System.Drawing.Point(6, 194);
             this.finalPriceOutput.Name = "finalPriceOutput";
-            this.finalPriceOutput.Size = new System.Drawing.Size(50, 15);
+            this.finalPriceOutput.Size = new System.Drawing.Size(295, 17);
             this.finalPriceOutput.TabIndex = 10;
+            this.finalPriceOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AppleQualityDeterminer
             // 

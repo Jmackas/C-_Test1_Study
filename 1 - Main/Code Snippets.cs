@@ -6,10 +6,13 @@ paintArea = decimal.Parse(inputPaintArea.Text);
 /****************************************
 Outputting label contents
 ****************************************/
-// Outputing 
+// Outputing as a number
 outputPaintCost.Text = paintCost.ToString();
 
-// Outputing as a number
+// Outputting with restricted amount of decimal places (2 in this instance)
+outputPaintCost.Text = paintCost.ToString("0.##");
+
+// Outputing as a price
 outputPaintCost.Text = paintCost.ToString("c");
 
 /****************************************
