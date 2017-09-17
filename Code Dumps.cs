@@ -15,8 +15,7 @@ Try catch block
 	} catch {
 	 MessageBox.Show(/* code */);
 	}
-	
-	
+
 	
 /****************************************
 If statement
@@ -47,17 +46,22 @@ If-else statement
 // example
 	if (x = 1)
 		{
-		   // statement is true
+		    MessageBox.Show("True");
 		}
 		else
 		{
-			// statement is false
+			 MessageBox.Show("False");
 		}
 
+/****************************************
+While loop 
+****************************************/
 
-
-
-
+// example
+	while (n > 6)
+	{
+		Console.WriteLine("current value is" + n);
+	}
 
 
 
