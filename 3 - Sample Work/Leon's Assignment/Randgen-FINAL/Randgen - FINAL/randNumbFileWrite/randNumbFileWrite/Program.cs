@@ -1,11 +1,10 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace randomNumberGenerator
+namespace randNumbFileWrite
 {
     static class Program
     {
@@ -17,7 +16,7 @@ namespace randomNumberGenerator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new randomNumberGenerator());
+            Application.Run(new randomNumberForm());
         }
     }
 }
