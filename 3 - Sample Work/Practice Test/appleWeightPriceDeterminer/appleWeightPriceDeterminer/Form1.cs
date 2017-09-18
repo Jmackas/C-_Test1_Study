@@ -35,7 +35,7 @@ namespace appleWeightPriceDeterminer
                 // Radio button 'B' bonus
                 decimal bBonus = 1.05m;
 
-                // Radio button 'B' bonus
+                // Radio button 'C' bonus
                 decimal cBonus = 1.00m;
 
                 // output price 
