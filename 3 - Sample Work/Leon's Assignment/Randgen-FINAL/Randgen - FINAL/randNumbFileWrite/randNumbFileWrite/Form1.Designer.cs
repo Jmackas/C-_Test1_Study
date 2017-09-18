@@ -64,7 +64,7 @@
             this.calculateButton.TabIndex = 1;
             this.calculateButton.Text = "Generate and Save to File";
             this.calculateButton.UseVisualStyleBackColor = true;
-            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
+            this.calculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // randNumbLabel
             // 

@@ -18,7 +18,7 @@ namespace randNumbFileWrite
             InitializeComponent();
         }
 
-        private void calculateButton_Click(object sender, EventArgs e)
+        private void CalculateButton_Click(object sender, EventArgs e)
         {
             try
             {
