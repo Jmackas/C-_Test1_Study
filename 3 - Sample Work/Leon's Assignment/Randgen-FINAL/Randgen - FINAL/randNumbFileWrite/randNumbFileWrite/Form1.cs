@@ -68,7 +68,7 @@ namespace randNumbFileWrite
 
 
                         // Add items to listbox
-                        outputFile.WriteLine(rand.Next(100));
+                        outputFile.WriteLine(rand.Next(100 + 1) );
 
 
                         // Add to Loop
