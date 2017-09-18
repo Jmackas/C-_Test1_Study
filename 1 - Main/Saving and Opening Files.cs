@@ -4,37 +4,49 @@ Remember, requires 'using System.IO;' at the top!
 /*******************************
 Opening a file
 ********************************/
-// Restrict file name type in save dialog
-openRandFileDiag.Filter = "Text Files | *.txt";
-
-// Set file default name to text type in dialog
-openRandFileDiag.DefaultExt = "txt";
-
-// Declare open file
-OpenFileDialog open = new OpenFileDialog();
-
-// Detect user selection
-if (openRandFileDiag.ShowDialog() == DialogResult.OK) {
-
- // Open the file and get a streamreader object * make sure the target name is the open dialog
- inputFile = (File.OpenText(openRandFileDiag.FileName));
-
- // Clear anything in list box
- randBox.Items.Clear();
+StreamWriter outputFile;
+                // Catch incorrect data entry 
+                if (qty <= 0)
+                        {
+                            // Show user message 
+                            MessageBox.Show("Invalid Data Entered, please try again");
+                            // Clear input in randamount text box
+                            randAmountTextbox.Clear();
+                            // Restarts program
+                            Application.Restart();
+                        }
 
 
- // Read the contents
- while (!inputFile.EndOfStream) {
-  //Get random number
-  randomNumber = inputFile.ReadLine();
-  // Add random number to listbox
-  randBox.Items.Add(randomNumber);
- }
+                // User operates save dialog box
+                else if (saveRandFileDiag.ShowDialog() == DialogResult.OK)
+                {
+                    
+                    // create a flie
+                    outputFile = File.CreateText(saveRandFileDiag.FileName);
+                    
 
- //close
- inputFile.Close();
+                    // Write Loop random numbers
+                    while (count <= qty)
+                    {
+                        
 
-}
+
+                        // Add items to listbox
+                        outputFile.WriteLine(rand.Next(100 + 1) );
+
+
+                        // Add to Loop
+                        count = count + 1;
+                                                
+                    }
+                    //Close file once saved
+                    outputFile.Close();
+                }
+                else
+                {
+                    // Message to show save to file cancel 
+                    MessageBox.Show(" The operation was cancelled ");
+                }
 
 
 /*******************************
